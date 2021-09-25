@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { PropertybindingExampleComponent } from './propertybinding-example/propertybinding-example.component';
 import { EventbindingExampleComponent } from './eventbinding-example/eventbinding-example.component';
 import { TwowaydatabindingComponent } from './twowaydatabinding/twowaydatabinding.component';
+import { TwowaybindingusingeventComponent } from './twowaybindingusingevent/twowaybindingusingevent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PropertybindingExampleComponent,
     EventbindingExampleComponent,
-    TwowaydatabindingComponent
+    TwowaydatabindingComponent,
+    TwowaybindingusingeventComponent
   ],
   imports: [
     BrowserModule,
