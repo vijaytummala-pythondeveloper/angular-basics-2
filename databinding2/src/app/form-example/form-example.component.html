@@ -1,0 +1,44 @@
+<br>
+<br><br><br>
+<div class="container">
+    Register :<input type="radio" value="register" [(ngModel)]="formwork" name="form-system">
+    Login : <input type="radio" value="login" [(ngModel)]="formwork" name="form-system">
+    <br>
+    <br><br><br>
+<div class="container">
+
+
+    <ng-container *ngIf="formwork=='register'; then thenTemplate; else elseTemplate"></ng-container>
+    <ng-template #thenTemplate>
+        <div class="register">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Password</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <input type="submit" class="btn-dark" value="register">
+            </div>
+    </ng-template>
+    <ng-template #elseTemplate>
+        <div class="login">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Password</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <input type="submit" class="btn-dark" value="Login">
+            </div>
+    </ng-template>
+    
+<!-- register form -->
+
+<!-- login form -->
+
+</div>
+</div>

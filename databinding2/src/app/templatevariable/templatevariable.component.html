@@ -1,0 +1,16 @@
+<br>
+<br>
+<div class="container">
+    text1:<h5 #t1>Welcome</h5>
+    text2<h5 #t2>to Bangalore</h5>
+    <input type="text" #in1 (keyup)="changeText(t1,in1.value)" placeholder="change text1">
+    <input type="text" #in2 (keyup)="changeText(t2,in2.value)" placeholder="change text2">
+    <input type="text" #test placeholder="testforngif" (keyup)="0">
+    <ng-container *ngIf=" test.value == 'hello'  else elseTemplate">
+        <h5>hello world</h5>
+    </ng-container>
+    <ng-template #elseTemplate>
+        <h5>bye world</h5>
+    </ng-template>
+
+</div>
