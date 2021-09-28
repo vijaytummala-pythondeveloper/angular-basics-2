@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EoPipe } from './eo.pipe';
+import { EopipeComponent } from './eopipe/eopipe.component';
+import { AddnumPipe } from './addnum.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EoPipe,
+    EopipeComponent,
+    AddnumPipe
   ],
   imports: [
     BrowserModule,
